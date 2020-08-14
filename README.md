@@ -34,11 +34,17 @@ edit your "/etc/security/limits.conf" so it looks like that (for memlock use you
 ```
 
 ->according to [this](https://gamesplusone.com/alsa_to_jack.html) (which I found through the Sound FAQ of the official WineHQ page) alsa can adjust to jackd2's buffer size by using a bridge, that means it is possible to get a audio latency of a few milliseconds.
+
 =>Doing it the hard way would be to follow the guide mentioned above.
+
 =>Or you could just use some tools that were created by the same guy [installation instructions](https://kx.studio/Repositories)
+
 ==>You only need the Cadence package the rest is only interesting for musicians.
+
 ==>Arch users find links to the AUR in the Software>Applications tab on the site
+
 ==>you will have to modprobe snd-aloop to make it work but this will be covered later in the tut
+
 ==>the actual minimal latency depends on your audio card (for me it's 128 -> 2.7ms (but you should start with 1024 or 512))
 
 ->many of you have some fancy graphic tablets which are some pretty good and fast input devices, only problem is that your system doesn't use them with the maximum refresh rate so lets fix that (that also counts for your mouse)
@@ -74,7 +80,9 @@ These options are also only tested on Manjaro Linux (means that all commands and
 ->for the following steps you might want to optimize your compiler flags first
 
 ->everyone is always talking about how great lowlatency and rt kernel's are (well yes they are great) but they are nothing compared to the -ck patched kernel it really gave my in and output a big boost
-you can get it here or if you are using fbdecondecor for your splashscreen here
+
+you can get it if you are using fbdecondecor for your splashscreen
+
 you also should read the Arch Wiki entry, I recommend enabling the BFQ and there are a few other settings you might want to change.
 
 ->increase the priority level so that you can actually use all the latency improvements to the fullest and minimize random framedrops:
@@ -141,8 +149,13 @@ Sources
 **give some credit to the people that deserve it (also so you can read up on all the stuff I posted above)**
 
 [linuxaudio-latency guide](https://wiki.linuxaudio.org/wiki/system_configuration)
+
 [Mouse Polling Rate](https://wiki.archlinux.org/index.php/Mouse_polling_rate)
+
 [linux-ck](http://ck-hack.blogspot.com/)
+
 [reduce-buffer-size](https://bbs.archlinux.org/viewtopic.php?pid=1002264#p1002264)
+
 [Wine Developer's Guide/Kernel modules](https://wiki.winehq.org/Wine_Developer%27s_Guide/Kernel_modules)
+
 the linux manpages
