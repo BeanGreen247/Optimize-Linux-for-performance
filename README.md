@@ -159,3 +159,9 @@ Sources
 [Wine Developer's Guide/Kernel modules](https://wiki.winehq.org/Wine_Developer%27s_Guide/Kernel_modules)
 
 the linux manpages
+
+## Videos for reference
+
+[Optimize Linux for performance](https://www.youtube.com/watch?v=nqTftr0nWEU) (main vid)
+
+[Improve your HDD performance in Linux!](https://www.youtube.com/watch?v=rDyXzD8e310) (part 2)
